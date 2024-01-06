@@ -42,7 +42,6 @@ import DialogAddUpdate from '../../../components/DialogAddUpdate'
 import { toast } from 'react-toastify'
 import { useNavigate } from 'react-router-dom'
 import { formatCurrency } from '../../../services/common/formatCurrency '
-import { FaRegStar, FaStar } from 'react-icons/fa'
 import { MdOutlineRestore } from 'react-icons/md'
 import { SketchPicker } from 'react-color'
 import { kytu } from '../../../services/constants/check'
@@ -365,17 +364,6 @@ export default function AdProductAdd() {
                         top: 15,
                         right: 5,
                         color: 'red',
-                        cursor: 'pointer',
-                      }}
-                    />
-                    <FaRegStar
-                      onClick={() => deleteCheckboxChange(image)}
-                      fontSize={'20px'}
-                      style={{
-                        position: 'absolute',
-                        top: 15,
-                        left: 13,
-                        color: 'yellow',
                         cursor: 'pointer',
                       }}
                     />
@@ -1707,9 +1695,7 @@ export default function AdProductAdd() {
             </div>
           </Stack>
           <div className="mt-3 mb-3">
-            <b>
-              <span style={{ color: 'red' }}>*</span>Mô tả sản phẩm
-            </b>
+            <b>Mô tả sản phẩm</b>
             <Stack spacing={1}>
               <TextField
                 color="cam"
